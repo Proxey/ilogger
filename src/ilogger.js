@@ -2,7 +2,7 @@
 const moment = require('moment'),
     fs = require('fs');
 
-const Level = require('./level');
+const Level = require('./Level');
 
 var output = {
     file: false,
