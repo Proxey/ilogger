@@ -48,7 +48,7 @@ var realLog = function (level, message, source) {
         payload.stackTrace = stack;
         write(stack);
     }
-    EventEmitter.emit(level.level, payload);
+    EventEmitter.emit("$" + level.level, payload);
 };
 
 var isConfigLevelHigher = function(level) {
