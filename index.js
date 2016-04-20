@@ -1,7 +1,7 @@
 'use strict';
-var ilogger = require('./src/ilogger');
-var Level = require('./src/Level');
-var EventEmitter = require('./src/EventEmitter');
+const ilogger = require('./src/ilogger');
+const Level = require('./src/Level');
+const EventEmitter = require('./src/EventEmitter');
 module.exports = ilogger;
 module.exports.Level = Level;
-module.exports.EventEmitter = require('./src/EventEmitter');
+module.exports.EventEmitter = EventEmitter;
