@@ -1,6 +1,7 @@
 "use strict";
-const moment = require('moment'),
-    fs = require('fs');
+const moment = require('moment');
+const fs = require('fs');
+const EventEmitter = require('./EventEmitter');
 
 const Level = require('./Level');
 
@@ -26,6 +27,11 @@ var write = function (string) {
 };
 
 var realLog = function (level, message, source) {
+    var payload = {
+        type: level,
+        message: message,
+        source: source
+    };
     var levelString;
     if(level.colorModifier) {
         levelString = level.colorModifier(level.str);
@@ -39,8 +45,10 @@ var realLog = function (level, message, source) {
         var stack = new Error().stack;
         //remove Error + 1st and 2nd line
         stack = stack.replace(new RegExp("Error\n[^\n]+\n[^\n]+\n"), "");
+        payload.stackTrace = stack;
         write(stack);
     }
+    EventEmitter.emit(level.level, payload);
 };
 
 var isConfigLevelHigher = function(level) {
