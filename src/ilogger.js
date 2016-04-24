@@ -30,7 +30,8 @@ var realLog = function (level, message, source) {
     var payload = {
         type: level,
         message: message,
-        source: source
+        source: source,
+        process: process.title
     };
     var levelString;
     if(level.colorModifier) {
