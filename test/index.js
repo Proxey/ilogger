@@ -5,7 +5,7 @@ const fs = require('fs');
 
 
 const TEMP_FILE = path.join(__dirname, "temp.log");
-const MILLIS = 1451646000000;
+const MILLIS = 1451649600000;
 console.log(TEMP_FILE);
 
 ilogger.setMillis(MILLIS);
