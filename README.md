@@ -1,4 +1,4 @@
-![travis](https://travis-ci.org/Proxey/ilogger.svg?branch=master) ![npm version](https://img.shields.io/npm/v/proxey-ilogger.svg?maxAge=2592000)
+[![travis](https://travis-ci.org/Proxey/ilogger.svg?branch=master)](https://travis-ci.org/Proxey/ilogger) ![npm version](https://img.shields.io/npm/v/proxey-ilogger.svg?maxAge=2592000)
 
 # proxey-ilogger
 a logging library for node.js
