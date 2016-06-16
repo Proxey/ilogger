@@ -4,7 +4,7 @@
 a logging library for node.js
 
 ## Getting started
-`npm install proxey-ilogger`
+`$ npm install proxey-ilogger`
 
 ```javascript
 const ilogger = require('proxey-ilogger');
