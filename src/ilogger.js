@@ -2,8 +2,8 @@
     "use strict";
     const moment = require('moment');
     const fs = require('fs');
-    const EventEmitter = require('./EventEmitter');
-    const Level = require('./Level');
+    const EventEmitter = require('./eventEmitter');
+    const Level = require('./level');
 
     var output = {
         file: false,
