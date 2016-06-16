@@ -1,3 +1,4 @@
+![travis](https://travis-ci.org/Proxey/ilogger.svg?branch=master)
 # proxey-ilogger
 a logging library for node.js
 
